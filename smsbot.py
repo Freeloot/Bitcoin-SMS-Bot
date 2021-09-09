@@ -21,7 +21,7 @@ def SMS():
     message = client.messages.create(  
                                       messaging_service_sid='zzzzzzzzzzzzz', # service sid
                                       body=f'{str(usd)}$',      
-                                      to='number' 
+                                      to=number
                                   ) 
          
     print(message.sid)
